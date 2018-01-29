@@ -1,13 +1,12 @@
 {
   "name": "cracks",
+  "version": "0.0.0",
   "description": "breaking change detection",
-  "main": "index.js",
-  "bin": "./bin/cracks",
+  "main": "lib/cli.js",
+  "bin": "bin/cracks",
   "scripts": {
-    "prebuild": "rimraf dist && mkdirp dist",
-    "build": "babel lib --out-dir dist",
     "test": "standard",
-    "prepublish": "npm run build",
+    "prepare": "rollup -c",
     "semantic-release": "semantic-release"
   },
   "repository": {
@@ -22,23 +21,23 @@
     "semantic-release",
     "package"
   ],
-  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
+  "author":
+    "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/semantic-release/cracks/issues"
   },
   "homepage": "https://github.com/semantic-release/cracks#readme",
   "devDependencies": {
-    "babel-cli": "^6.26.0",
-    "mkdirp": "^0.5.1",
-    "rimraf": "^2.4.2",
+    "rollup": "^0.55.1",
+    "rollup-plugin-commonjs": "^8.3.0",
+    "rollup-plugin-json": "^2.3.0",
+    "rollup-plugin-node-resolve": "^3.0.2",
     "semantic-release": "^12.2.4",
     "standard": "^10.0.3"
   },
   "standard": {
-    "ignore": [
-      "dist/**"
-    ]
+    "ignore": ["dist/**"]
   },
   "dependencies": {
     "execa": "^0.9.0",
