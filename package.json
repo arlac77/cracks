@@ -21,15 +21,14 @@
     "semantic-release",
     "package"
   ],
-  "author":
-    "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
+  "author": "Christoph Witzko <npm@christophwitzko.com> (http://christophwitzko.com/)",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/semantic-release/cracks/issues"
   },
   "homepage": "https://github.com/semantic-release/cracks#readme",
   "devDependencies": {
-    "rollup": "^0.55.1",
+    "rollup": "^0.55.3",
     "rollup-plugin-commonjs": "^8.3.0",
     "rollup-plugin-json": "^2.3.0",
     "rollup-plugin-node-resolve": "^3.0.2",
@@ -37,7 +36,9 @@
     "standard": "^10.0.3"
   },
   "standard": {
-    "ignore": ["dist/**"]
+    "ignore": [
+      "dist/**"
+    ]
   },
   "dependencies": {
     "execa": "^0.9.0",
