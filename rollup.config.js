@@ -6,9 +6,18 @@ export default {
   output: {
     file: pkg.bin,
     format: 'cjs',
-    banner: '#!/usr/bin/env node'
+    banner: '#!/usr/bin/env node',
+    interop: false
   },
   plugins: [resolve(), commonjs(), json()],
-  external: ['fs', 'util', 'path'],
+  external: [
+    'fs',
+    'util',
+    'path',
+    'assert',
+    'events',
+    'stream',
+    'child_process'
+  ],
   input: pkg.main
 };
