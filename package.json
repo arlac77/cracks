@@ -28,11 +28,11 @@
   },
   "homepage": "https://github.com/semantic-release/cracks#readme",
   "devDependencies": {
-    "rollup": "^1.4.1",
-    "rollup-plugin-commonjs": "^9.2.0",
-    "rollup-plugin-json": "^3.0.0",
-    "rollup-plugin-node-resolve": "^4.0.1",
-    "semantic-release": "^15.6.0",
+    "rollup": "^1.15.2",
+    "rollup-plugin-commonjs": "^10.0.0",
+    "rollup-plugin-json": "^4.0.0",
+    "rollup-plugin-node-resolve": "^5.0.2",
+    "semantic-release": "^15.13.16",
     "standard": "^12.0.1"
   },
   "standard": {
