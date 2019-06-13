@@ -1,6 +1,6 @@
 {
   "name": "cracks",
-  "version": "0.0.0",
+  "version": "0.0.0-semantic-release",
   "description": "breaking change detection",
   "main": "lib/cli.js",
   "bin": "bin/cracks",
@@ -43,7 +43,6 @@
   "dependencies": {
     "execa": "^1.0.0",
     "git-refs": "^1.1.2",
-    "lodash.uniq": "^4.5.0",
     "minimist": "^1.1.1",
     "package.json": "^2.0.1"
   }
