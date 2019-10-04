@@ -43,7 +43,7 @@
     ]
   },
   "dependencies": {
-    "execa": "^1.0.0",
+    "execa": "^2.0.5",
     "git-refs": "^1.1.2",
     "minimist": "^1.1.1",
     "package.json": "^2.0.1"
