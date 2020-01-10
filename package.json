@@ -2,7 +2,8 @@
   "name": "cracks",
   "version": "0.0.0-semantic-release",
   "description": "breaking change detection",
-  "main": "lib/cli.js",
+  "main": "dist/index.js",
+  "module": "src/index.js",
   "bin": "bin/cracks",
   "scripts": {
     "prepare": "rollup -c",
