@@ -6,6 +6,7 @@ import consts from "rollup-plugin-consts";
 import builtins from "builtin-modules";
 import { name, version, description, main, bin } from "./package.json";
 
+const external = [...builtins, "execa","minimist","git-refs"];
 const plugins = [
   consts({
     name,
@@ -26,7 +27,7 @@ export default [
       interop: false
     },
     plugins: [...plugins, executable()],
-    external: [...builtins],
+    external,
     input: "lib/cli.js"
   },
   {
@@ -36,7 +37,7 @@ export default [
       interop: false
     },
     plugins,
-    external: [...builtins],
+    external,
     input: "lib/index.js"
   }
 ];
