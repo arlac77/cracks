@@ -34,7 +34,7 @@
     "@rollup/plugin-node-resolve": "^7.0.0",
     "rollup-plugin-executable": "^1.5.2",
     "rollup-plugin-consts": "^1.0.1",
-    "semantic-release": "^16.0.0"
+    "semantic-release": "^18.0.1"
   },
   "dependencies": {
     "execa": "^6.0.0",
